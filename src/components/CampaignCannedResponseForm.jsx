@@ -27,6 +27,7 @@ class CannedResponseForm extends React.Component {
     });
 
     const { customFields, handleCloseAddForm } = this.props;
+    const customTags = ["great convo", "okay convo", "bad convo"];
     return (
       <div>
         <GSForm ref="form" schema={modelSchema} onSubmit={this.handleSave}>
@@ -43,6 +44,14 @@ class CannedResponseForm extends React.Component {
             name="text"
             type="script"
             label="Script"
+            multiLine
+            fullWidth
+          />
+          <Form.Field
+            customFields={customTags}
+            name="text"
+            type="script"
+            label="Tags"
             multiLine
             fullWidth
           />

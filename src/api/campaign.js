@@ -4,7 +4,7 @@ export const schema = `
     campaignId: Int
     campaignIds: [Int]
     listSize: Int
-    pageSize: Int
+    pageSize: Int  
   }
 
   type CampaignStats {
